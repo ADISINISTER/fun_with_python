@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Over</title>
+    <style>
+        .game-over {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-over">
+        {% if winner %}
+            Player {{ winner }} wins!
+        {% else %}
+            It's a tie!
+        {% endif %}
+    </div>
+</body>
+</html>
